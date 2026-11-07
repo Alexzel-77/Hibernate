@@ -19,7 +19,7 @@ public class Libro {
     @Column(name = "anio_publicacion", nullable = false)
     private int anio_publicacion;
 
-    @Column(name = "precio", nullable = false, precision = 10, scale = 2)
+    @Column(name = "precio", nullable = false)
     private double precio;
 
     public Libro() {
