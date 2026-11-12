@@ -22,6 +22,8 @@ public class Libro {
     @Column(name = "precio", nullable = false)
     private double precio;
 
+
+
     public Libro() {
     }
 
@@ -45,7 +47,7 @@ public class Libro {
     public void setPrecio(double precio) { this.precio = precio; }
 
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "categoria_id", nullable = false)
     private Categoria categoria;
 
