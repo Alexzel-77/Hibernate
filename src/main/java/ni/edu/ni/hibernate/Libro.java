@@ -43,4 +43,17 @@ public class Libro {
     public void setAnio_publicacion(int anio_publicacion) { this.anio_publicacion = anio_publicacion; }
     public double getPrecio() { return precio; }
     public void setPrecio(double precio) { this.precio = precio; }
+
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "categoria_id", nullable = false)
+    private Categoria categoria;
+
+    public Categoria getCategoria() { return categoria; }
+    public void setCategoria(Categoria categoria) { this.categoria = categoria; }
+
+
+
+
+
 }

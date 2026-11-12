@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class BibliotecaApplication extends Application {
+public class    BibliotecaApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(BibliotecaApplication.class.getResource("libro-view.fxml"));
